@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block con %}
+<head>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide container-fluid row">
+            <div class="col-12" style="color: white; font-size: 45px; width: max-content; padding-top: 5px;">
+                <h3>🚀 Welcome Hoon's Web Page </h3>             
+                <img src="/static/base/main/astronaut-with-space-shuttle.gif" style="width: 100% ; height: 500px; padding-top: 150px;">   
+            </div>
+            <div class="col-12" style="color: white; padding-bottom: 100px;">
+                <h1>On the voyage to become a Cloud engineer</h1><br><br>
+                <button class="btn btn-outline-light" onclick="secondpage()">▼</button>
+            </div>
+        </div>
+
+        <!-- AWS Ability Info -->
+        <div class="swiper-slide container-fluid row" style="color: white;">
+            <div style="padding-bottom: 100px;">
+                <h2>Ability to use AWS</h2><br><br><br><br><br>
+                <div class="row justify-content-around">
+                    <div class="col-2">
+                        <p>✨Building Instances Using EC2</p>
+                        <img src="/static/base/main/EC2.png" style="width: fit-content; height: 150px;">
+                    </div>
+                    <div class="col-2" style="padding-right: 75px;">
+                        <p>✨Storage server using S3</p>
+                        <img src="/static/base/main/s3.png" style="width: fit-content; height: 150px;">  
+                    </div>
+                    <div class="col-2">
+                        <p>✨AWS Lambda</p>
+                        <img src="/static/base/main/Lambda.png" style="width: fit-content; height: 150px;">   
+                    </div>
+                </div>
+                <div class="row justify-content-evenly" style="padding-top: 75px;">
+                    <div class="col-2">
+                        <p>✨AWS RDS Use</p>
+                        <img src="/static/base/main/RDS.png" style="width: fit-content; height: 150px;">
+                    </div>
+                    <div class="col-2">
+                        <p>✨Network configuration using VPC</p>
+                        <img src="/static/base/main/vpc.png" style="width: fit-content; height: 150px;"> 
+                    </div>
+                </div>                            
+                <button class="btn btn-outline-light" onclick="thirdpage()">▼</button>
+            </div>
+        </div>
+
+        <!-- OS Ability Info -->
+        <div class="swiper-slide container-fluid row"  style="color: white;">
+            <div style="padding-bottom: 100px;">
+                <h2>Use of Windows Linux Operating System</h2><br><br><br><br><br>
+                <div class="col-12" style="padding-top: 20px;">
+                    <div class="justify-content-center" style="display: flex;">
+                        <div>       
+                            <img src="/static/base/main/Linux.png" style="width: fit-content; height:150px; padding-right: 50px;">
+                            <img src="/static/base/main/ubuntu.png" style="width: fit-content; height:150px;">
+                        </div>
+                        <div style="padding-top: 50px; width: fit-content;">
+                            <p>Build dns, web, DB server using Linux and Nginx, uWSGI from Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" style="padding-top: 50px;">  
+                    <div class="justify-content-center" style="display: flex;">
+                        <div>      
+                            <img src="/static/base/main/window.png" style="width: fit-content; height:150px; padding-right: 50px;">
+                        </div>
+                        <div style="padding-top: 50px; width: fit-content;">
+                            <p>Window Server operation using Active Directory Domain Services </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-outline-light" onclick="fourthpage()">▼</button>
+            </div>
+        </div>
+
+        <!-- Web Ability Info -->
+        <div class="swiper-slide container-fluid row" style="color: white;">
+            <div style="padding-bottom: 100px;">       
+                <h1>Web</h1><br>
+                <h4>Python, django framework, html,css,js bootstrap, git</h4><br>
+                <div class="row justify-content-evenly" style="height: 200px; padding-top: 100px;">
+                    <img src="/static/base/main/python.png" style="width: 100px; height:100px;">
+                    <img src="/static/base/main/django.png" style="width: 100px; height:100px;">
+                    <img src="/static/base/main/html.png" style="width: 100px; height:100px;">
+                    <img src="/static/base/main/css.png" style="width: 100px; height:100px;">
+                    <img src="/static/base/main/javascript.png" style="width: 100px; height:100px;">
+                    <img src="/static/base/main/bootstrap.png" style="width: 100px; height:100px;">
+                    <img src="/static/base/main/github.png" style="width: 100px; height:100px;">
+                </div>
+                <div class="text-center" style="height: 300px; padding-top: 100px; color: white;">
+                    <p>파이썬, 장고를 통한 웹 서버 기능 구현</p><br>
+                    <p>HTML, CSS, JS, Bootstrap을 통해 웹 사이트 제작</p><br>
+                    <p>Git hub, bash를 이용한 웹 사이트 배포 및 공유</p><br><br><br><br><br>
+                </div>         
+                <button class="btn btn-outline-light" onclick="Fifthpage()">▼</button>
+            </div>
+        </div>
+
+        <!-- All Info -->
+        <div class="swiper-slide text-center">
+            <div class="text-center" style="color: white; width: fit-content; height:300px;">
+                <div class="d-flex justify-content-around" style="padding-top: 40px;">
+                    <h1>Abilty</h1>
+                    <div class="p-2" style="font-size:12px">
+                        Python<br><br>
+                        Django<br><br>
+                        Html<br><br>
+                        Java Script<br><br>
+                        CSS<br><br>
+                    </div>
+
+                    <div class="p-2" style="font-size:12px">
+                        AWS EC2<br><br>
+                        AWS RDS<br><br>
+                        AWS VPC<br><br>
+                        AWS IAM<br><br>
+                        AWS S3<br><br>
+                        AWS Lambda<br><br>
+                    </div>
+
+                    <div class="p-2" style="font-size:12px">
+                        Ubuntu<br><br>
+                        Cent OS<br><br>
+                        Window Server<br><br>
+                    </div>
+                </div>
+
+                <div class="mt-5 mb-5 text-center">
+                    <span class="material-symbols-outlined">
+                        browse_activity
+                    </span>
+                        Made by Hoon 2022.DEC
+                </div>
+
+            
+                <button class="btn btn-outline-light btn-bg" onclick="toppage()">top</button>
+              
+            </div>
+        </div>
+
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+
+      </div>
+      <div class="swiper-pagination"></div>      
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/static/js/swiper.js"></script>
+    <script>
+        function toppage() {
+        swiper.slideTo(0, 500, false)
+    }
+        function secondpage() {
+        swiper.slideTo(1, 500, false)
+    }
+        function thirdpage() {
+        swiper.slideTo(2, 500, false)
+    }
+        function fourthpage() {
+        swiper.slideTo(3, 500, false)
+    }
+        function Fifthpage() {
+        swiper.slideTo(4, 500, false)
+    }
+    </script>
+
+  </body>
+
+  {% endblock %}
